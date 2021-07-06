@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/6fed9e48d6.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>To-do App project</title>
+</head>
+
+<body class="body-dark body">
+  <div class="page-container">
+    <div class="bg-image"><img src="./images/bg-desktop-dark.jpg"></div>
+
+    <div class="app-container">
+      <div class="alert">
+        <h3>Please Enter a task!!!</h3>
+      </div>
+      <div class="app-UI">
+        <div class="app-header">
+          <div class="title">
+            <h1>TODO</h1>
+          </div>
+          <div class="themes" style="position: relative;">
+            <img src="./images/icon-sun.svg" style="display: block;" class="light-mode">
+            <img src="./images/icon-moon.svg " style="display: none;" class="dark-mode">
+            <small style="position: absolute;
+            left: -10px;
+            bottom:-30px;
+            font-size: 13px;
+            text-align: center;
+            opacity: .5;">Change Theme</small>
+          </div>
+        </div>
+
+        <div class="task-input">
+          <div class="checker submit-btn"></div>
+          <form id="task-form">
+            <input type="text" name="task" id="new-task">
+          </form>
+        </div>
+
+        <div class="tasks-container">
+          <div class="tasks">
+            <ul class="task-list"></ul>
+          </div>
+
+          <div class="app-options">
+            <div class="incomplete-counter small-txt"></div>
+            <div class="toggles">
+              <ul>
+                <li class="toggle-all small-txt">All</li>
+                <li class="toggle-active small-txt">Active</li>
+                <li class="toggle-completed small-txt">Completed</li>
+              </ul>
+            </div>
+            <div id="clr-tasks" class="small-txt">Clear Completed</div>
+            <div class="font-change font-dark">
+              <div>
+                <p>Change Font</p>
+                <i class="fas fa-angle-up"></i>
+              </div>
+              <ul class="fonts">
+                <li class="font-1" style="font-family: 'Josefin Sans', sans-serif">
+                  <h2>Josefin Sans(default): This is a preview of this font</h2>
+                </li>
+                <li class="font-2" style="font-family: 'Montserrat', sans-serif">
+                  <h2>Montserrat: This is a preview of this font</h2>
+                </li>
+                <li class="font-3" style="font-family: 'Roboto', sans-serif;">
+                  <h2>Roboto: This is a preview of this font</h2>
+                </li>
+                <li class="font-4" style="font-family: 'Dancing Script', cursive;">
+                  <h2>Dancing Script: This is a preview of this font</h2>
+                </li>
+                <li class="font-5" style="font-family: 'Quicksand', sans-serif;">
+                  <h2>Quicksand: This is a preview of this font</h2>
+                </li>
+                <li class="font-6" style="font-family: 'Cormorant Garamond', serif;">
+                  <h2>Cormoant Garamond: This is a preview of this font</h2>
+                </li>
+                <li class="font-7" style="font-family:  'Amatic SC', cursive;">
+                  <h2>Amatic SC: This is a preview of this font</h2>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
