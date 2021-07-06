@@ -406,7 +406,7 @@ function dynamicHeight() {
   if (taskContainer.offsetHeight >= 231) {
     windowHeight = window.innerHeight;
     taskContainerHeight = taskContainer.offsetHeight;
-    pageContainer.style.height = `${((windowHeight) + taskContainerHeight - 100)}px`
+    pageContainer.style.height = `${((windowHeight) + taskContainerHeight )}px`
   } else {
     pageContainer.style.height = "105vh"
  }
@@ -558,8 +558,9 @@ function getTaskLenght() {
      each.style.marginTop = ".6rem"
      each.nextElementSibling.style.bottom = "auto";
    }
-   if (wordArr.length <= 13 && wordArr.length > 8) {
-     each.nextElementSibling.style.bottom = "20px";
+   if (wordArr.length >= 6 && wordArr.length < 13) {
+    each.parentElement.parentElement.style.display = "block";
+    each.style.marginTop = ".6rem"
     }
   })
 }
